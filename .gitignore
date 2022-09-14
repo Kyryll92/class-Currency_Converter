@@ -1,5 +1,17 @@
 # Compiled class file
-*.class
+class Currency_Converter {
+public static void main (String args[]) 
+	{
+	int bitcoin;
+	Scanner num= new Scanner(System.in);
+	System.out.print("Введіть курс Bitcoin до доллара: ");
+	int course= num.nextInt();
+	System.out.print("Введіть суму доларів, яку хоче поміняти на Bitcoin: ");
+	int dollar= num.nextInt();
+	bitcoin=course*dollar;
+	System.out.println("Ви можете купити: " + bitcoin + " Біткоїнів.");
+	}
+}
 
 # Log file
 *.log
